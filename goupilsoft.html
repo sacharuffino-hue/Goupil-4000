@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoupilSoft | Logiciel CNC Open Source</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand"><div class="logo-placeholder"><span class="logo-text">GOUPIL-4000</span></div></div>
+            <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="specifications.html">Spécifications</a></li>
+                <li><a href="conception.html">Conception</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="goupilsoft.html" class="active">GoupilSoft</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="equipe.html">Équipe</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>GoupilSoft <span class="gradient-text">V0.1</span></h1>
+            <p>Logiciel de contrôle CNC développé en interne - Open Source</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="content-card">
+                <div class="card-header">
+                    <i class="fas fa-code"></i>
+                    <h2>Présentation du Logiciel</h2>
+                </div>
+                <div class="card-body">
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                        <strong>GoupilSoft</strong> est un logiciel de contrôle CNC développé spécifiquement pour la fraiseuse Goupil-4000. 
+                        Créé en Python (version 0.1), il offre une interface intuitive avec visualisation 3D du parcours outil, 
+                        contrôle manuel et automatique des axes, et gestion complète du G-code.
+                    </p>
+                    <div class="spec-info-box">
+                        <i class="fas fa-github"></i>
+                        <p><strong>Open Source :</strong> Le code source sera publié sur GitHub (lien à venir) pour permettre 
+                        à la communauté de contribuer et d'améliorer le logiciel.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section bg-light">
+        <div class="container">
+            <div class="content-card">
+                <div class="card-header">
+                    <i class="fas fa-list-check"></i>
+                    <h2>Fonctionnalités Principales</h2>
+                </div>
+                <div class="card-body">
+                    <div class="two-column">
+                        <div class="column">
+                            <h3><i class="fas fa-display"></i> Interface Utilisateur</h3>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check"></i> Affichage positions X, Y, Z, A (avec G54)</li>
+                                <li><i class="fas fa-check"></i> Contrôle manuel (mode continu/pas-à-pas)</li>
+                                <li><i class="fas fa-check"></i> Bouton d'arrêt d'urgence intégré</li>
+                                <li><i class="fas fa-check"></i> Ajustement feedrate 50-150%</li>
+                                <li><i class="fas fa-check"></i> Console G-code en temps réel</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <h3><i class="fas fa-cube"></i> Visualisation 3D</h3>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check"></i> Affichage parcours outil en 3D</li>
+                                <li><i class="fas fa-check"></i> Vues : Dessus / Face / Isométrique</li>
+                                <li><i class="fas fa-check"></i> Zoom et rotation libre</li>
+                                <li><i class="fas fa-check"></i> Preview avant usinage</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="two-column" style="margin-top: 2rem;">
+                        <div class="column">
+                            <h3><i class="fas fa-file-code"></i> Gestion G-code</h3>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check"></i> Chargement fichiers .nc / .gcode</li>
+                                <li><i class="fas fa-check"></i> Commandes MDI (Manual Data Input)</li>
+                                <li><i class="fas fa-check"></i> Pause / Reprise programme</li>
+                                <li><i class="fas fa-check"></i> Exécution ligne par ligne</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <h3><i class="fas fa-rotate"></i> Contrôle Broche</h3>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check"></i> Démarrage / Arrêt broche</li>
+                                <li><i class="fas fa-check"></i> Réglage vitesse 0-8000 tr/min</li>
+                                <li><i class="fas fa-check"></i> Affichage RPM en temps réel</li>
+                                <li><i class="fas fa-check"></i> Indicateur de charge</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="content-card">
+                <div class="card-header">
+                    <i class="fas fa-code-branch"></i>
+                    <h2>Architecture Technique</h2>
+                </div>
+                <div class="card-body">
+                    <div class="spec-details">
+                        <div class="spec-row">
+                            <div class="spec-item">
+                                <div class="spec-label">Version actuelle</div>
+                                <div class="spec-value">V0.1 (Python)</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-label">Langage</div>
+                                <div class="spec-value">Python 3.x</div>
+                            </div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-item">
+                                <div class="spec-label">Interface graphique</div>
+                                <div class="spec-value">Tkinter / PyQt</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-label">Visualisation 3D</div>
+                                <div class="spec-value">OpenGL / Matplotlib</div>
+                            </div>
+                        </div>
+                        <div class="spec-info-box" style="margin-top: 1.5rem;">
+                            <i class="fas fa-lightbulb"></i>
+                            <p><strong>Migration prévue :</strong> GoupilSoft V2 sera développé en C++ ou Rust pour améliorer 
+                            les performances et réduire le temps de traitement (actuellement estimé à 270h vs 170h ciblé).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section bg-light">
+        <div class="container">
+            <div class="content-card">
+                <div class="card-header">
+                    <i class="fas fa-road"></i>
+                    <h2>Roadmap de Développement</h2>
+                </div>
+                <div class="card-body">
+                    <div class="timeline">
+                        <div class="timeline-item active">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">Phase 1 - Actuelle</div>
+                                <h3>GoupilSoft V0.1</h3>
+                                <p>Version Python avec fonctionnalités de base : contrôle 3 axes, visualisation 3D, interface de base</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">Phase 2 - S6 2026</div>
+                                <h3>Optimisations & Tests</h3>
+                                <p>Amélioration performances, ajout 4ème axe rotatif, tests d'usinage avancés</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">Phase 3 - Future</div>
+                                <h3>GoupilSoft V2</h3>
+                                <p>Réécriture en C++/Rust, support 5 axes, stratégies d'usinage complexes, publication open source</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="content-card">
+                <div class="card-header">
+                    <i class="fas fa-chart-bar"></i>
+                    <h2>RETEX & Estimation</h2>
+                </div>
+                <div class="card-body">
+                    <h3 style="margin-bottom: 1rem;">Points Forts</h3>
+                    <ul class="feature-list" style="margin-bottom: 2rem;">
+                        <li><i class="fas fa-check"></i> Interface intuitive et ergonomique</li>
+                        <li><i class="fas fa-check"></i> Visualisation 3D performante</li>
+                        <li><i class="fas fa-check"></i> Open source et personnalisable</li>
+                        <li><i class="fas fa-check"></i> Développé spécifiquement pour la G-4000</li>
+                    </ul>
+                    
+                    <h3 style="margin-bottom: 1rem;">Défis Rencontrés</h3>
+                    <ul class="feature-list" style="margin-bottom: 2rem;">
+                        <li><i class="fas fa-circle"></i> Performance Python limitée pour calculs intensifs</li>
+                        <li><i class="fas fa-circle"></i> Verbosité du code (impact sur maintenabilité)</li>
+                        <li><i class="fas fa-circle"></i> Temps de développement supérieur à l'estimation</li>
+                    </ul>
+                    
+                    <div class="performance-grid">
+                        <div class="performance-item">
+                            <div class="perf-label">Temps de développement estimé</div>
+                            <div class="perf-value">170 heures</div>
+                        </div>
+                        <div class="performance-item">
+                            <div class="perf-label">Temps de développement réel</div>
+                            <div class="perf-value" style="color: #f59e0b;">270 heures</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Code Source à Venir</h2>
+                <p>GoupilSoft sera publié en open source sur GitHub prochainement</p>
+                <a href="#" class="btn btn-outline-white"><i class="fab fa-github"></i> GitHub (bientôt)</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Goupil-4000</h3>
+                    <p>Projet de fraiseuse CNC 4 axes - BUT GMP IUT Mantes-en-Yvelines.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="specifications.html">Spécifications</a></li>
+                        <li><a href="goupilsoft.html">GoupilSoft</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:contact@goupil4000.fr">contact@goupil4000.fr</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>IUT Mantes</h3>
+                    <p>Institut Universitaire de Technologie de Mantes-en-Yvelines</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Projet Goupil-4000 - IUT de Mantes-en-Yvelines</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

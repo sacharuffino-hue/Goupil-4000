@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie Multimédia | Goupil-4000</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <img src="images/logo-goupil-4000.png" alt="Logo Goupil-4000" style="height: 65px; width: auto;">
+                </a>
+            </div>
+            <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="specifications.html">Spécifications</a></li>
+                <li><a href="en-construction.html">Conception</a></li>
+                <li><a href="galerie.html" class="active">Galerie</a></li>
+                <li><a href="en-construction.html">GoupilSoft</a></li>
+                <li><a href="en-construction.html">Documentation</a></li>
+                <li><a href="en-construction.html">Équipe</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Galerie <span class="gradient-text">Multimédia</span></h1>
+            <p>Photos, vidéos et schémas du projet Goupil-4000</p>
+        </div>
+    </section>
+
+    <!-- Photos Assemblage -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Photos d'<span class="gradient-text">Assemblage</span></h2>
+                <p>Machine G-3000 et composants</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/assemblage/machine-atelier-1.jpg" alt="Machine CNC G-4000 en atelier" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Assemblage</span>
+                        <h3 class="gallery-title">Machine G-4000 en atelier</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/assemblage/machine-atelier-2.jpg" alt="Structure portique aluminium" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Assemblage</span>
+                        <h3 class="gallery-title">Structure portique aluminium</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/assemblage/equipe-travail.jpg" alt="Équipe au travail sur la machine" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Équipe</span>
+                        <h3 class="gallery-title">L'équipe au travail</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Électronique -->
+    <section class="content-section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2><span class="gradient-text">Électronique</span> & Câblage</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/electronique/boitier-electronique.jpg" alt="Boîtier électronique">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Électronique</span>
+                        <h3 class="gallery-title">Boîtier électronique et drivers</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/electronique/cablage-electronique.jpg" alt="Câblage électronique détaillé">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Câblage</span>
+                        <h3 class="gallery-title">Câblage et connexions électroniques</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vidéos -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Vidéos de <span class="gradient-text">Tests</span></h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <video controls autoplay muted loop playsinline webkit-playsinline preload="auto" style="width: 100%; height: 100%; object-fit: cover;">
+                        <source src="videos/test-usinage-bois-1.mov" type="video/mp4">
+                        <source src="videos/test-usinage-bois-1.mov" type="video/quicktime">
+                        Votre navigateur ne supporte pas les vidéos.
+                    </video>
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Tests</span>
+                        <h3 class="gallery-title">Test usinage bois (1ère passe)</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <video controls autoplay muted loop playsinline webkit-playsinline preload="auto" style="width: 100%; height: 100%; object-fit: cover;">
+                        <source src="videos/test-usinage-bois-2eme-passe.mov" type="video/mp4">
+                        <source src="videos/test-usinage-bois-2eme-passe.mov" type="video/quicktime">
+                        Votre navigateur ne supporte pas les vidéos.
+                    </video>
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Tests</span>
+                        <h3 class="gallery-title">Test usinage bois (2ème passe)</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <video controls autoplay muted loop playsinline webkit-playsinline preload="auto" style="width: 100%; height: 100%; object-fit: cover;">
+                        <source src="videos/usinage-base-pilier.mov" type="video/mp4">
+                        <source src="videos/usinage-base-pilier.mov" type="video/quicktime">
+                        Votre navigateur ne supporte pas les vidéos.
+                    </video>
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Fabrication</span>
+                        <h3 class="gallery-title">Usinage base pilier</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <video controls autoplay muted loop playsinline webkit-playsinline preload="auto" style="width: 100%; height: 100%; object-fit: cover;">
+                        <source src="videos/usinage-liaison-pilier-fraise2T.mov" type="video/mp4">
+                        <source src="videos/usinage-liaison-pilier-fraise2T.mov" type="video/quicktime">
+                        Votre navigateur ne supporte pas les vidéos.
+                    </video>
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Fabrication</span>
+                        <h3 class="gallery-title">Usinage liaison pilier (fraise 2T)</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <video controls playsinline webkit-playsinline style="background: linear-gradient(135deg, #ff8c00 0%, #ff6b35 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; font-weight: 600; padding: 2rem;">
+                        <div style="text-align: center;">
+                            <i class="fas fa-video" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                            <p>Vidéo trop volumineuse (22 MB)</p>
+                            <p style="font-size: 0.9rem; opacity: 0.9;">IMG_1821.MOV</p>
+                            <p style="font-size: 0.8rem; margin-top: 1rem;">À héberger sur YouTube ou Vimeo</p>
+                        </div>
+                    </video>
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Tests</span>
+                        <h3 class="gallery-title">Test machine (IMG_1821)</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <video controls playsinline webkit-playsinline style="background: linear-gradient(135deg, #ff8c00 0%, #ff6b35 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; font-weight: 600; padding: 2rem;">
+                        <div style="text-align: center;">
+                            <i class="fas fa-video" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                            <p>Vidéo trop volumineuse (23 MB)</p>
+                            <p style="font-size: 0.9rem; opacity: 0.9;">IMG_1825.MOV</p>
+                            <p style="font-size: 0.8rem; margin-top: 1rem;">À héberger sur YouTube ou Vimeo</p>
+                        </div>
+                    </video>
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Tests</span>
+                        <h3 class="gallery-title">Test machine (IMG_1825)</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Consultez la Documentation Technique</h2>
+                <p>Téléchargez les fichiers CAO, manuels et guides d'utilisation</p>
+<a href="index.html" class="btn btn-white"><i class="fas fa-home"></i> Retour à l'accueil</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Goupil-4000</h3>
+                    <p>Projet de fraiseuse CNC 4 axes - BUT GMP IUT Mantes-en-Yvelines.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Pages Actives</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="specifications.html">Spécifications</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:contact@goupil4000.fr">contact@goupil4000.fr</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>IUT Mantes</h3>
+                    <p>Institut Universitaire de Technologie de Mantes-en-Yvelines</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Projet Goupil-4000 - IUT de Mantes-en-Yvelines</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Spécifications techniques détaillées de la fraiseuse CNC Goupil-4000 : structure, motorisation, broche, électronique et performances.">
+    <title>Spécifications Techniques | Goupil-4000</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <img src="images/logo-goupil-4000.png" alt="Logo Goupil-4000" style="height: 65px; width: auto;">
+                </a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="specifications.html" class="active">Spécifications</a></li>
+                <li><a href="en-construction.html">Conception</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="en-construction.html">GoupilSoft</a></li>
+                <li><a href="en-construction.html">Documentation</a></li>
+                <li><a href="en-construction.html">Équipe</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Spécifications <span class="gradient-text">Techniques</span></h1>
+            <p>Découvrez en détail les caractéristiques techniques de la Goupil-4000</p>
+        </div>
+    </section>
+
+    <!-- Specs Overview -->
+    <section class="specs-overview">
+        <div class="container">
+            <div class="specs-grid">
+                <div class="spec-box">
+                    <div class="spec-icon"><i class="fas fa-ruler-combined"></i></div>
+                    <h3>Dimensions</h3>
+                    <p>Course : 300 x 250 x 125 mm</p>
+                </div>
+                <div class="spec-box">
+                    <div class="spec-icon"><i class="fas fa-weight-hanging"></i></div>
+                    <h3>Structure</h3>
+                    <p>Portique aluminium</p>
+                </div>
+                <div class="spec-box">
+                    <div class="spec-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Puissance</h3>
+                    <p>1kW broche + 300W axes</p>
+                </div>
+                <div class="spec-box">
+                    <div class="spec-icon"><i class="fas fa-microchip"></i></div>
+                    <h3>Contrôle</h3>
+                    <p>PoKeys57CNC</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Structure Mécanique -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-card">
+                <div class="card-header">
+                    <i class="fas fa-cubes"></i>
+                    <h2>Structure Mécanique</h2>
+                </div>
+                <div class="card-body">
+                    <div class="spec-details">
+                        <div class="spec-row">
+                            <div class="spec-item">
+                                <div class="spec-label">Type</div>
+                                <div class="spec-value">Portique</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-label">Matériau</div>
+                                <div class="spec-value">Aluminium</div>
+                            </div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-item">
+                                <div class="spec-label">Qualité</div>
+                                <div class="spec-value">Aluminium qualité Aéronautique</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-label">Rigidité</div>
+                                <div class="spec-value highlight-green">5 centièmes</div>
+                            </div>
+                        </div>
+                        <div class="spec-info-box">
+                            <i class="fas fa-info-circle"></i>
+                            <p><strong>Innovation majeure :</strong> La structure en aluminium de qualité aéronautique offre une rigidité optimale et une précision de positionnement garantie pour tous types d'usinage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performances -->
+    <section class="content-section bg-light">
+        <div class="container">
+            <div class="content-card">
+                <div class="card-header">
+                    <i class="fas fa-chart-line"></i>
+                    <h2>Performances</h2>
+                </div>
+                <div class="card-body">
+                    <div class="performance-grid">
+                        <div class="performance-item">
+                            <div class="perf-label">Précision d'usinage</div>
+                            <div class="perf-value">±0,05 mm</div>
+                            <div class="perf-bar">
+                                <div class="perf-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="performance-item">
+                            <div class="perf-label">Vitesse d'avance (X, Y, Z)</div>
+                            <div class="perf-value">1500 mm/min</div>
+                            <div class="perf-bar">
+                                <div class="perf-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="performance-item">
+                            <div class="perf-label">Précision de positionnement</div>
+                            <div class="perf-value">±0,05 mm</div>
+                            <div class="perf-bar">
+                                <div class="perf-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transmission -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-card">
+                <div class="card-header">
+                    <i class="fas fa-cog"></i>
+                    <h2>Transmission & Guidages</h2>
+                </div>
+                <div class="card-body">
+                    <div class="two-column">
+                        <div class="column">
+                            <h3><i class="fas fa-arrows-alt"></i> Guidages Linéaires</h3>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check"></i> Rails de précision</li>
+                                <li><i class="fas fa-check"></i> Chariots à billes</li>
+                                <li><i class="fas fa-check"></i> Faible friction</li>
+                                <li><i class="fas fa-check"></i> Haute rigidité</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <h3><i class="fas fa-sync-alt"></i> Vis à Billes</h3>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check"></i> Pas de 5 mm</li>
+                                <li><i class="fas fa-check"></i> Transmission efficace</li>
+                                <li><i class="fas fa-check"></i> Précision garantie</li>
+                                <li><i class="fas fa-check"></i> Durabilité accrue</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Motorisation -->
+    <section class="content-section bg-light">
+        <div class="container">
+            <div class="content-card">
+                <div class="card-header">
+                    <i class="fas fa-bolt"></i>
+                    <h2>Motorisation</h2>
+                </div>
+                <div class="card-body">
+                    <div class="spec-details">
+                        <div class="spec-row">
+                            <div class="spec-item">
+                                <div class="spec-label">Type de moteurs</div>
+                                <div class="spec-value">Nema 23 (Pas-à-pas)</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-label">Drivers</div>
+                                <div class="spec-value">Drivers pas-à-pas fournis</div>
+                            </div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-item">
+                                <div class="spec-label">Puissance totale axes</div>
+                                <div class="spec-value">300W</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-label">Nombre d'axes</div>
+                                <div class="spec-value">3 à 5 axes</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Broche -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-card">
+                <div class="card-header">
+                    <i class="fas fa-rotate"></i>
+                    <h2>Système de Broche G-4000</h2>
+                </div>
+                <div class="card-body">
+                    <div class="broche-specs">
+                        <h3 style="margin-bottom: 1.5rem; color: var(--color-primary);"><i class="fas fa-circle-notch" style="margin-right: 0.5rem;"></i> Broche Principale</h3>
+                        <div class="broche-main">
+                            <div class="broche-icon">
+                                <i class="fas fa-circle-notch"></i>
+                            </div>
+                            <div class="broche-info">
+                                <div class="spec-highlight">
+                                    <span class="label">Vitesse de rotation</span>
+                                    <span class="value">0 - 8000 tr/min</span>
+                                </div>
+                                <div class="spec-highlight">
+                                    <span class="label">Puissance</span>
+                                    <span class="value">1000W (1kW)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="broche-details">
+                            <div class="detail-item">
+                                <strong>Type de pince :</strong> ER25
+                            </div>
+                            <div class="detail-item">
+                                <strong>Diamètre d'outil maximum :</strong> Ø16 mm
+                            </div>
+                            <div class="detail-item">
+                                <strong>Refroidissement :</strong> Ventilation active
+                            </div>
+                            <div class="detail-item">
+                                <strong>Contrôle :</strong> Vitesse variable par logiciel
+                            </div>
+                        </div>
+                        
+                        <h3 style="margin: 2rem 0 1.5rem; color: var(--color-primary);"><i class="fas fa-circle-notch" style="margin-right: 0.5rem;"></i> Broche Secondaire (Haute Vitesse)</h3>
+                        <div class="broche-main">
+                            <div class="broche-icon" style="background: var(--gradient-pink);">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="broche-info">
+                                <div class="spec-highlight">
+                                    <span class="label">Vitesse de rotation</span>
+                                    <span class="value">0 - 28000 tr/min</span>
+                                </div>
+                                <div class="spec-highlight">
+                                    <span class="label">Puissance</span>
+                                    <span class="value">800W</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="broche-details">
+                            <div class="detail-item">
+                                <strong>Application :</strong> Usinage haute vitesse (HSM)
+                            </div>
+                            <div class="detail-item">
+                                <strong>Matériaux :</strong> Plastiques, bois tendres, alu léger
+                            </div>
+                            <div class="detail-item">
+                                <strong>Refroidissement :</strong> Ventilation haute performance
+                            </div>
+                            <div class="detail-item">
+                                <strong>Avantage :</strong> Finitions exceptionnelles
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Électronique -->
+    <section class="content-section bg-light">
+        <div class="container">
+            <div class="content-card">
+                <div class="card-header">
+                    <i class="fas fa-microchip"></i>
+                    <h2>Électronique & Contrôle</h2>
+                </div>
+                <div class="card-body">
+                    <div class="two-column">
+                        <div class="column">
+                            <h3>Carte de Contrôle</h3>
+                            <div class="tech-box">
+                                <div class="tech-name">PoKeys57CNC</div>
+                                <p>Breakout Board (BOB) professionnelle pour le contrôle CNC avec support multi-axes</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <h3>Logiciels</h3>
+                            <div class="tech-box">
+                                <div class="tech-name">Phase 1 : Mach3</div>
+                                <p>Logiciel commercial éprouvé</p>
+                            </div>
+                            <div class="tech-box">
+                                <div class="tech-name">Phase 2 : GoupilSoft</div>
+                                <p>Développement maison en Python (open source)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Matériaux Usinables -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-card">
+                <div class="card-header">
+                    <i class="fas fa-layer-group"></i>
+                    <h2>Matériaux Usinables</h2>
+                </div>
+                <div class="card-body">
+                    <div class="materials-grid">
+                        <div class="material-card">
+                            <i class="fas fa-tree"></i>
+                            <h4>Bois</h4>
+                            <p>Tous types : contreplaqué, MDF, bois massif</p>
+                        </div>
+                        <div class="material-card">
+                            <i class="fas fa-box"></i>
+                            <h4>Plastiques</h4>
+                            <p>ABS, PVC, acrylique, polycarbonate</p>
+                        </div>
+                        <div class="material-card">
+                            <i class="fas fa-gem"></i>
+                            <h4>Aluminium</h4>
+                            <p>Alliages légers et moyens</p>
+                        </div>
+                        <div class="material-card">
+                            <i class="fas fa-circle"></i>
+                            <h4>Laiton</h4>
+                            <p>Usinage de précision</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tableau Comparatif -->
+    <section class="content-section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Comparatif <span class="gradient-text">G-3000 vs G-4000</span></h2>
+                <p>Évolution et améliorations significatives</p>
+            </div>
+            <div class="comparison-table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Critère</th>
+                            <th>G-3000</th>
+                            <th>G-4000 (Monoplaque)</th>
+                            <th>Amélioration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Rigidité</strong></td>
+                            <td>Standard</td>
+                            <td class="highlight">Optimisée (aluminium qualité aéro)</td>
+                            <td class="positive"><i class="fas fa-check"></i> Améliorée</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Précision d'usinage</strong></td>
+                            <td>±0,1 mm</td>
+                            <td class="highlight">±0,05 mm</td>
+                            <td class="positive"><i class="fas fa-arrow-up"></i> +50%</td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>Nombre d'axes</strong></td>
+                            <td>3 axes</td>
+                            <td class="highlight">3-5 axes (évolutif)</td>
+                            <td class="positive"><i class="fas fa-plus"></i> Modulaire</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Structure</strong></td>
+                            <td>Standard</td>
+                            <td class="highlight">Aluminium qualité aéro</td>
+                            <td class="positive"><i class="fas fa-check"></i> Optimisé</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Logiciel</strong></td>
+                            <td>Mach3</td>
+                            <td class="highlight">GoupilSoft (maison)</td>
+                            <td class="positive"><i class="fas fa-code"></i> Open source</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Découvrez la Goupil-4000 en Action</h2>
+                <p>Visitez notre galerie pour voir des photos, vidéos et tests d'usinage</p>
+                <div class="cta-buttons">
+                    <a href="galerie.html" class="btn btn-white">
+                        <i class="fas fa-images"></i> Voir la galerie
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Goupil-4000</h3>
+                    <p>Projet de fraiseuse CNC 4 axes développé dans le cadre du BUT Génie Mécanique et Productique à l'IUT de Mantes-en-Yvelines.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="specifications.html">Spécifications</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:contact@goupil4000.fr">contact@goupil4000.fr</a></li>
+                        <li><i class="fab fa-github"></i> <a href="#" target="_blank">GitHub (à venir)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>IUT Mantes</h3>
+                    <p>Institut Universitaire de Technologie<br>de Mantes-en-Yvelines<br>Département GMP</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Projet Goupil-4000 - IUT de Mantes-en-Yvelines | Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

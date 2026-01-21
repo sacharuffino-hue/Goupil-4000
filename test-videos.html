@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Vidéos - Goupil-4000</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        
+        h1 {
+            color: #ff8c00;
+            text-align: center;
+        }
+        
+        .video-container {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .video-container h3 {
+            color: #333;
+            margin-top: 0;
+        }
+        
+        video {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+            background: #000;
+            border-radius: 8px;
+        }
+        
+        .info {
+            background: #e8f4f8;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #ff8c00;
+        }
+        
+        .success {
+            color: #28a745;
+            font-weight: bold;
+        }
+        
+        .error {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        
+        .status {
+            font-family: monospace;
+            font-size: 0.9em;
+            padding: 5px 10px;
+            background: #f8f9fa;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎬 Test des Vidéos - Goupil-4000</h1>
+    
+    <div class="info">
+        <strong>Instructions :</strong>
+        <ol>
+            <li>Ouvrez la console du navigateur (F12 > Console)</li>
+            <li>Vérifiez le statut de chaque vidéo ci-dessous</li>
+            <li>Cliquez sur PLAY pour tester la lecture</li>
+            <li>Si une vidéo ne charge pas, vérifiez le chemin du fichier</li>
+        </ol>
+        <p><strong>Note :</strong> Vous devez utiliser un serveur local (pas simplement ouvrir le fichier HTML)</p>
+    </div>
+
+    <!-- Vidéo 1 -->
+    <div class="video-container">
+        <h3>1️⃣ Test usinage bois (1ère passe)</h3>
+        <video id="video1" controls preload="metadata" playsinline webkit-playsinline>
+            <source src="videos/test-usinage-bois-1.mov" type="video/mp4">
+            <source src="videos/test-usinage-bois-1.mov" type="video/quicktime">
+            Votre navigateur ne supporte pas cette vidéo.
+        </video>
+        <div class="status" id="status1">Chargement...</div>
+    </div>
+
+    <!-- Vidéo 2 -->
+    <div class="video-container">
+        <h3>2️⃣ Test usinage bois (2ème passe)</h3>
+        <video id="video2" controls preload="metadata" playsinline webkit-playsinline>
+            <source src="videos/test-usinage-bois-2eme-passe.mov" type="video/mp4">
+            <source src="videos/test-usinage-bois-2eme-passe.mov" type="video/quicktime">
+            Votre navigateur ne supporte pas cette vidéo.
+        </video>
+        <div class="status" id="status2">Chargement...</div>
+    </div>
+
+    <!-- Vidéo 3 -->
+    <div class="video-container">
+        <h3>3️⃣ Usinage base pilier</h3>
+        <video id="video3" controls preload="metadata" playsinline webkit-playsinline>
+            <source src="videos/usinage-base-pilier.mov" type="video/mp4">
+            <source src="videos/usinage-base-pilier.mov" type="video/quicktime">
+            Votre navigateur ne supporte pas cette vidéo.
+        </video>
+        <div class="status" id="status3">Chargement...</div>
+    </div>
+
+    <!-- Vidéo 4 -->
+    <div class="video-container">
+        <h3>4️⃣ Usinage liaison pilier (fraise 2T)</h3>
+        <video id="video4" controls preload="metadata" playsinline webkit-playsinline>
+            <source src="videos/usinage-liaison-pilier-fraise2T.mov" type="video/mp4">
+            <source src="videos/usinage-liaison-pilier-fraise2T.mov" type="video/quicktime">
+            Votre navigateur ne supporte pas cette vidéo.
+        </video>
+        <div class="status" id="status4">Chargement...</div>
+    </div>
+
+    <script>
+        // Test de chaque vidéo
+        const videos = [
+            { id: 'video1', statusId: 'status1', name: 'Test usinage bois (1ère passe)' },
+            { id: 'video2', statusId: 'status2', name: 'Test usinage bois (2ème passe)' },
+            { id: 'video3', statusId: 'status3', name: 'Usinage base pilier' },
+            { id: 'video4', statusId: 'status4', name: 'Usinage liaison pilier' }
+        ];
+
+        videos.forEach(videoInfo => {
+            const video = document.getElementById(videoInfo.id);
+            const status = document.getElementById(videoInfo.statusId);
+
+            // Événement : Métadonnées chargées
+            video.addEventListener('loadedmetadata', () => {
+                const duration = Math.round(video.duration);
+                status.innerHTML = `<span class="success">✅ Chargée avec succès</span> - Durée: ${duration}s - ${video.videoWidth}x${video.videoHeight}px`;
+                console.log(`✅ ${videoInfo.name} chargée - Durée: ${duration}s`);
+            });
+
+            // Événement : Erreur de chargement
+            video.addEventListener('error', (e) => {
+                status.innerHTML = `<span class="error">❌ Erreur de chargement</span> - Vérifiez que le fichier existe dans videos/`;
+                console.error(`❌ ${videoInfo.name} - Erreur:`, e);
+            });
+
+            // Événement : Données peuvent être lues
+            video.addEventListener('canplay', () => {
+                console.log(`▶️ ${videoInfo.name} - Prête à être lue`);
+            });
+
+            // Événement : Lecture démarrée
+            video.addEventListener('play', () => {
+                console.log(`▶️ ${videoInfo.name} - Lecture démarrée`);
+            });
+
+            // Précharger
+            video.load();
+        });
+
+        // Test du serveur local
+        console.log('🔍 Vérification de l\'environnement...');
+        if (window.location.protocol === 'file:') {
+            console.warn('⚠️ ATTENTION: Vous ouvrez le fichier directement (file://)');
+            console.warn('⚠️ Les vidéos peuvent ne pas fonctionner sans serveur local');
+            console.warn('⚠️ Utilisez: python -m http.server 8000');
+        } else {
+            console.log('✅ Serveur local détecté:', window.location.origin);
+        }
+    </script>
+</body>
+</html>

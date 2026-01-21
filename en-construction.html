@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page en Construction | Goupil-4000</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        .construction-section {
+            min-height: calc(100vh - 160px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--spacing-xl) 0;
+            background: var(--color-bg-light);
+        }
+        
+        .construction-content {
+            text-align: center;
+            max-width: 700px;
+            padding: var(--spacing-lg);
+        }
+        
+        .construction-icon {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto var(--spacing-md);
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            color: white;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .construction-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-sm);
+            color: var(--color-dark);
+        }
+        
+        .construction-content p {
+            font-size: 1.2rem;
+            color: var(--color-text-light);
+            line-height: 1.8;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .construction-info {
+            background: white;
+            padding: var(--spacing-md);
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+            margin: var(--spacing-md) 0;
+        }
+        
+        .construction-info h3 {
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-sm);
+            font-size: 1.3rem;
+        }
+        
+        .construction-list {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+        
+        .construction-list li {
+            padding: 0.5rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--color-text);
+        }
+        
+        .construction-list i {
+            color: var(--color-primary);
+        }
+        
+        .back-buttons {
+            display: flex;
+            gap: var(--spacing-sm);
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: var(--spacing-md);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <img src="images/logo-goupil-4000.png" alt="Logo Goupil-4000" style="height: 65px; width: auto;">
+                </a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="specifications.html">Spécifications</a></li>
+                <li><a href="en-construction.html">Conception</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="en-construction.html">GoupilSoft</a></li>
+                <li><a href="en-construction.html">Documentation</a></li>
+                <li><a href="en-construction.html">Équipe</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Construction Section -->
+    <section class="construction-section">
+        <div class="container">
+            <div class="construction-content">
+                <div class="construction-icon">
+                    <i class="fas fa-hard-hat"></i>
+                </div>
+                
+                <h1>Page en <span class="gradient-text">Construction</span></h1>
+                
+                <p>Cette page est actuellement en cours de développement. Nous travaillons activement sur le contenu pour vous offrir la meilleure expérience possible.</p>
+                
+                <div class="construction-info">
+                    <h3><i class="fas fa-info-circle"></i> Pages en Développement</h3>
+                    <ul class="construction-list">
+                        <li><i class="fas fa-tools"></i> <strong>Conception & Fabrication</strong> - Méthodologie et processus</li>
+                        <li><i class="fas fa-code"></i> <strong>GoupilSoft</strong> - Documentation du logiciel CNC</li>
+                        <li><i class="fas fa-book"></i> <strong>Documentation</strong> - Guides et ressources techniques</li>
+                        <li><i class="fas fa-users"></i> <strong>Équipe</strong> - Profils détaillés des membres</li>
+                    </ul>
+                </div>
+                
+                <p style="margin-top: 2rem; font-size: 1rem; color: var(--color-text);">
+                    <i class="fas fa-clock"></i> <strong>Mise à jour prévue :</strong> Prochainement
+                </p>
+                
+                <div class="back-buttons">
+                    <a href="index.html" class="btn btn-primary">
+                        <i class="fas fa-home"></i> Retour à l'accueil
+                    </a>
+                    <a href="specifications.html" class="btn btn-secondary">
+                        <i class="fas fa-cog"></i> Voir les spécifications
+                    </a>
+                    <a href="galerie.html" class="btn btn-secondary">
+                        <i class="fas fa-images"></i> Voir la galerie
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Goupil-4000</h3>
+                    <p>Projet de fraiseuse CNC 4 axes - BUT GMP IUT Mantes-en-Yvelines.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="specifications.html">Spécifications</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:contact@goupil4000.fr">contact@goupil4000.fr</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>IUT Mantes</h3>
+                    <p>Institut Universitaire de Technologie de Mantes-en-Yvelines</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Projet Goupil-4000 - IUT de Mantes-en-Yvelines</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
